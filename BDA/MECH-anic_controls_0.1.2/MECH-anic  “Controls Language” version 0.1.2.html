@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="exporter-version" content="Evernote Mac 6.1.1 (452253)"/><meta name="altitude" content="186"/><meta name="author" content="Matt Knowles"/><meta name="created" content="2015-10-08 22:29:25 +0000"/><meta name="latitude" content="41.88788209500198"/><meta name="longitude" content="-87.70644435996799"/><meta name="source" content="desktop.mac"/><meta name="updated" content="2015-10-11 08:52:22 +0000"/><title>MECH-anic  “Controls Language” version 0.1.2</title></head><body>
+<div>In “MECH-anic” the “controls language” tells the user how to manipulate and activate the controls to trigger different behaviors. </div>
+<div><br/></div>
+<div><b>Dictionary</b></div>
+<ol>
+<li>Control - any object that can be manipulated by the user holding some state. A control can have its own behaviors and trigger criteria.</li>
+<li>State - the properties of an object at any one time. Examples ( on / off / 100% / 1,2 or 3 / active / non-active)</li>
+<li>Principle control (PC) - a control the user is attempting to manipulate.</li>
+<li>Trigger Criteria (TC) - other controls that must be triggered into a specific state following defined rules before the principle control can be triggered.</li>
+<li>Physical Control Mechanics (PCM) - the physical manipulation required to trigger a principle control once the “Trigger Criteria” have been fulfilled.</li>
+<li>Station - Any specified area holding a set of controls and identified to the user as a discrete area. </li>
+<li>Trigger Group (TG) - the visual area holding “trigger criteria”. Rounded rectangular area.</li>
+<li>Indicator - shape / letter / number used to identify something in the game.</li>
+<li>Principle Control Indicator (PCI) - indicator for principle control.</li>
+<li>Control Indicator (CI) - visual identifier placed next to the physical location of the control along with any trigger criteria. Used in the trigger criteria to specify its required state.</li>
+<li>Sequence Arrow (SA) - Can indicate the order controls must be triggered in trigger criteria. Can connect Control Indicators or Synchronization Bars.</li>
+<li>Synchronization Bar (SB) - Indicates controls must be triggered together at the same time.</li>
+<li>Control Coordinates (CC) - when controls are organized in a grid each row and column will have an indicator. The combination of two indicators will specify the control.</li>
+<li>Flow - when the flow of any flow type must be shared between more than one control. i.e. the flow of oil or power through all controls.</li>
+<li>Flow Types (FT) - substance or entity that a control needs to be triggered. i.e. power / oil / ammo / water / electric eels / oxygen </li>
+<li>Level - objects with states that are 0 to 100%. i.e. Power Level or Fuel level.</li>
+<li>Sub-Criteria (SC) - vertically arranged next to a Control Indicator, specifies the required state and rules to trigger the control properly to fulfill the criteria.</li>
+<li>Control Grid - when controls are arranged in rows and columns. Each row and column will have its own Control Indicator (CI).</li>
+<li>Control Coordinates (CC) - Controls in a Control Grid can be identified by two Control Indicators (CI) one for the row and one for column. Two CI’s together specify the control to trigger, these are the control’s Control Coordinates (CC).</li>
+</ol>
+<div><br/></div>
+<div><br/></div>
+<div>
+<hr/></div>
+<div><b>Example: Trigger Group (TG), no Control Indicators (CI)  </b>                      </div>
+<div><br/></div>
+<div><img src="MECH-anic%20%C2%A0%E2%80%9CControls%20Language%E2%80%9D%20version%200.1.2.resources/Screen%20Shot%202015-10-09%20at%208.20.20%20AM.png" height="210" width="182"/>                 </div>
+<div><br/></div>
+<div>
+<hr/></div>
+<div><br/></div>
+<div>  <b>Examples: Control Indicators (CI), Just Shapes    </b>                            </div>
+<div> <img src="MECH-anic%20%C2%A0%E2%80%9CControls%20Language%E2%80%9D%20version%200.1.2.resources/Screen%20Shot%202015-10-09%20at%208.33.36%20AM.png" height="552" width="470"/></div>
+<div><b>Examples: Control Indicators (CI), Shapes with Letters/Numbers</b> </div>
+<div><br/></div>
+<div><img src="MECH-anic%20%C2%A0%E2%80%9CControls%20Language%E2%80%9D%20version%200.1.2.resources/Screen%20Shot%202015-10-09%20at%208.38.05%20AM.png" height="622" width="526"/></div>
+<div><br/></div>
+<div>
+<hr/></div>
+<div><br/></div>
+<div> <b>Example: Trigger Group (TG) with Principle Control Indicator (PCI), no Trigger Criteria (TC).</b></div>
+<div><img src="MECH-anic%20%C2%A0%E2%80%9CControls%20Language%E2%80%9D%20version%200.1.2.resources/Screen%20Shot%202015-10-09%20at%208.43.25%20AM.png" height="290" width="476"/></div>
+<div><br/></div>
+<div><b>Example: Trigger Group (TG) with Principle Control Indicator (PCI), with Trigger Criteria (TC).</b></div>
+<div>The user will see the version on the left, the version on the right is labelled to help explain its usage.</div>
+<div>This Trigger Group means, the principle control (star) can only be triggered once control A (square), B (triangle) and </div>
+<div>C (circle) have all been triggered. A, B and C can be activated in any order. They just have to all remain active when the principle control is triggered.</div>
+<div><br/></div>
+<div><img src="MECH-anic%20%C2%A0%E2%80%9CControls%20Language%E2%80%9D%20version%200.1.2.resources/Screen%20Shot%202015-10-09%20at%208.51.04%20AM.png" height="346" width="462"/><img src="MECH-anic%20%C2%A0%E2%80%9CControls%20Language%E2%80%9D%20version%200.1.2.resources/Screen%20Shot%202015-10-09%20at%208.53.44%20AM.png" height="350" width="626"/></div>
+<div><b>Example: Trigger Group (TG) with Principle Control Indicator (PCI), with Trigger Criteria (TC) using Sequence Arrows (SA). </b></div>
+<div>Sample 1 is the same of as example [[ADD EXAMPLE LETTER HERE]] except the controls A, B, and C must be triggered in the order shown in the trigger criteria (TC), <u>A then B then C.</u> They must all remain active then the principle control can be triggered. The arrows are called Sequence Arrows (SA), showing the order dependence of the trigger criteria (TC). Note Sequence Arrows (SA) can be oriented horizontally, vertically or diagonally.</div>
+<div><u>Sample 1</u>:</div>
+<div><img src="MECH-anic%20%C2%A0%E2%80%9CControls%20Language%E2%80%9D%20version%200.1.2.resources/Screen%20Shot%202015-10-10%20at%2011.38.21%20AM.png" height="330" width="480"/><img src="MECH-anic%20%C2%A0%E2%80%9CControls%20Language%E2%80%9D%20version%200.1.2.resources/Screen%20Shot%202015-10-10%20at%2011.37.10%20AM.png" height="332" width="624"/><img src="MECH-anic%20%C2%A0%E2%80%9CControls%20Language%E2%80%9D%20version%200.1.2.resources/Screen%20Shot%202015-10-10%20at%2011.32.56%20PM.png" height="69" width="216"/></div>
+<div><u>Sample 2</u>:</div>
+<div>Sample 2 has a new Principle Control Indicator (PCI) and now there is a longer sequence of controls in the Trigger Criteria (TC). The table on the right labels the controls and the sequence is A, B, C, D, E, F.</div>
+<div><img src="MECH-anic%20%C2%A0%E2%80%9CControls%20Language%E2%80%9D%20version%200.1.2.resources/Screen%20Shot%202015-10-10%20at%2011.59.32%20AM.png" height="332" width="458"/>  <img src="MECH-anic%20%C2%A0%E2%80%9CControls%20Language%E2%80%9D%20version%200.1.2.resources/Screen%20Shot%202015-10-10%20at%2012.07.43%20PM.png" height="224" width="580"/></div>
+<div><br/></div>
+<div><u>Sample 3 &amp; 4</u>:</div>
+<div>The next two samples represent the same Trigger Criteria (TC). When the club is triggered the diamond will immediately follow and when the spade is triggered the heart will immediately follow. It does not matter which goes first (club or spade) but the Sequence Arrows (SA) specified which control will proceed which.</div>
+<div>Potential viable sequences are: </div>
+<div>Club, Diamond, Spade, Heart     </div>
+<div>               OR    </div>
+<div>Spade, Heart, Club, Diamond</div>
+<div><img src="MECH-anic%20%C2%A0%E2%80%9CControls%20Language%E2%80%9D%20version%200.1.2.resources/Screen%20Shot%202015-10-10%20at%2010.34.43%20PM.png" height="320" width="532"/><img src="MECH-anic%20%C2%A0%E2%80%9CControls%20Language%E2%80%9D%20version%200.1.2.resources/Screen%20Shot%202015-10-10%20at%2010.38.19%20PM.png" height="328" width="510"/></div>
+<div><br/></div>
+<div><br/></div>
+<div>
+<hr/></div>
+<div><b>Example: Trigger Group (TG) with Principle Control Indicator (PCI), with Trigger Criteria (TC) using a Synchronization Bar (SB)</b></div>
+<div>Below we see a single solid thicker bar it is a Synchronization Bar (SB) meaning the Club and Heart control must be activated at the same time. Once activated at the same time and remaining active the Principle Control (PC) can be triggered. Note Synchronization Bars (SB) can be oriented horizontally, vertically or diagonally.</div>
+<div><br/></div>
+<div><img src="MECH-anic%20%C2%A0%E2%80%9CControls%20Language%E2%80%9D%20version%200.1.2.resources/Screen%20Shot%202015-10-10%20at%2011.09.54%20PM.png" height="111" width="247"/><b> </b><img src="MECH-anic%20%C2%A0%E2%80%9CControls%20Language%E2%80%9D%20version%200.1.2.resources/Screen%20Shot%202015-10-10%20at%2011.35.20%20PM.png" height="78" width="276"/></div>
+<div><b><br/></b></div>
+<div>
+<hr/></div>
+<div><b>Example: Trigger Group (TG) with Principle Control Indicator (PCI), with Trigger Criteria (TC) using Synchronization Bars (SB)</b></div>
+<div>Below we see Synchronization Bars (SB) connecting Control Indicators (CI). In this example order does not matter, the Club or Spade can be triggered first as long so the “synchronized” control is triggered with it. </div>
+<div>Potential viable sequences are:</div>
+<div>  Club and Diamond together then Spade and Heart together.     </div>
+<div>                                   OR</div>
+<div>  Spade and Heart together then Club and Diamond together.</div>
+<div><img src="MECH-anic%20%C2%A0%E2%80%9CControls%20Language%E2%80%9D%20version%200.1.2.resources/Screen%20Shot%202015-10-10%20at%2011.21.03%20PM.png" height="136" width="241"/></div>
+<div><br/></div>
+<div>
+<hr/></div>
+<div><b>Example: Trigger Group (TG) with Principle Control Indicator (PCI), with Trigger Criteria (TC) using Synchronization Bars (SB) and a Sequence Arrow (SA).</b></div>
+<div>This example shows the controls now do have a required order. The Sequence Arrow (SA) specifies which “synchronized” controls must go first, Club and Diamond, then Spade and Heart. Demonstrating the Sequence Arrow (SA) can be used to connect Control Indicators (CI) or Synchronization Bars (SB).</div>
+<div><br/></div>
+<div><img src="MECH-anic%20%C2%A0%E2%80%9CControls%20Language%E2%80%9D%20version%200.1.2.resources/Screen%20Shot%202015-10-10%20at%2011.30.15%20PM.png" height="146" width="245"/></div>
+<div><br/></div>
+<div>
+<hr/></div>
+<div><b>Example: A Control Grid.</b></div>
+<div>Here is an arrangement of controls, a grid of buttons (each having a letter) with rows and columns. Each row and column has a Control Indicator (CI).</div>
+<div><br/></div>
+<div><img src="MECH-anic%20%C2%A0%E2%80%9CControls%20Language%E2%80%9D%20version%200.1.2.resources/Screen%20Shot%202015-10-11%20at%201.02.21%20AM.png" height="216" width="251"/></div>
+<div><br/></div>
+<div>
+<hr/></div>
+<div><b>Example: Control Coordinates (CC)</b></div>
+<div>Here are a number of Control Coordinates (CC) using the above Control Grid. </div>
+<div><br/></div>
+<div><img src="MECH-anic%20%C2%A0%E2%80%9CControls%20Language%E2%80%9D%20version%200.1.2.resources/Screen%20Shot%202015-10-11%20at%202.05.38%20AM.png" height="88" width="266"/>    <img src="MECH-anic%20%C2%A0%E2%80%9CControls%20Language%E2%80%9D%20version%200.1.2.resources/Screen%20Shot%202015-10-11%20at%202.23.29%20AM.png" height="87" width="263"/><img src="MECH-anic%20%C2%A0%E2%80%9CControls%20Language%E2%80%9D%20version%200.1.2.resources/Screen%20Shot%202015-10-11%20at%202.25.31%20AM.png" height="84" width="264"/></div>
+<div><br/></div>
+<div>
+<hr/></div>
+<div><b>Example: Trigger Group (TG) with Principle Control Indicator (PCI), with Trigger Criteria (TC). Using Control Coordinates (CC)</b></div>
+<div><b>Sample 1</b> shows the use of Control Coordinates (CC) to indicate Trigger Criteria (TC). Using the above Control Grid as the basis for the coordinates the TC show controls A , T, and G must be activated, no order is specified. </div>
+<div><br/></div>
+<div><b>Sample 2</b> shows Control Coordinates (CC) with a Sequence Arrow (SA). The correct trigger order will be A then T. </div>
+<div><br/></div>
+<div><b>Sample 3</b> shows Control Coordinates (CC) with a Synchronization Bar (SB) and a Sequence Arrow (SA). The correct trigger order will be A and T together then trigger G. </div>
+<div><b><br/></b></div>
+<div><b>Sample 1:                                                  Sample 2:                                          Sample: 3</b></div>
+<div><img src="MECH-anic%20%C2%A0%E2%80%9CControls%20Language%E2%80%9D%20version%200.1.2.resources/Screen%20Shot%202015-10-11%20at%202.41.14%20AM.png" height="218" width="247"/><img src="MECH-anic%20%C2%A0%E2%80%9CControls%20Language%E2%80%9D%20version%200.1.2.resources/Screen%20Shot%202015-10-11%20at%202.51.45%20AM.png" height="162" width="238"/><img src="MECH-anic%20%C2%A0%E2%80%9CControls%20Language%E2%80%9D%20version%200.1.2.resources/Screen%20Shot%202015-10-11%20at%202.55.57%20AM.png" height="200" width="398"/></div>
+<div><br/></div>
+<div>
+<hr/></div>
+<div><br/></div>
+<div><br/></div>
+<div><br/></div>
+</body></html>

@@ -1,0 +1,174 @@
+Section 1 - UNDERSTANDING THE INTERFACE
+
+Chapter 01 - First encounters
+A quick look over some questions that people new to Blender might have. For example what's with the cube? Left clicking moves a crosshair? And also a quick look at customizing.
+
+Chapter 02 - Navigation
+Getting to grips with navigating around objects in the 3D View, as well as shortcuts for switching camera modes.
+
+Chapter 03 - Layout Customizing
+How to change the window layouts, resize and reconfigure them in any arrangement that you want.
+
+Chapter 04 - User Preference Changes
+Some preferences recommended to be changed for this and other projects. Autodepth, Autoperspective, Layers Addon, VBO’s, what they do and how they improve the initial setup.
+
+
+Section 2 - 3D VIEW
+
+Chapter 01 - Menus, Modes and Display
+Exploring the contents of the first section of the headerbar in the 3dView.
+
+Chapter 02 - Pivot Point and 3d Manipulator
+More exploration of the 3d view's headerbar. A more detailed look at moving and manipulating objects.
+
+Chapter 03 - Layers and Snapping
+Finishing up on the contents of the headerbar. Also including proportional editing and open GL rendering.
+
+
+Section 3 - MODELING
+
+Chapter 01 - Mesh Data, Object Data
+Getting to grips with some fundamentals on how Blender controls and organizes Mesh and Object data.
+
+Chapter 02 - Object Tools
+Manipulating your assets at an object level. Joining and separating objects, a quick look at parent and child relationships and many more tips. Also includes a quick primer on the key shortcut menus in preparation of editing at the Mesh level. 
+
+Chapter 03 - Mesh Tools - Extrude
+A quick look at the most common mesh editing tools, in this chapter we'll get a feel for the extrude tool.
+
+Chapter 04 - Mesh Tools - Bevel
+A quick look at another common mesh editing tool - the bevel tool.
+
+Chapter 05 - Mesh Tools - Subdivide
+Another quick look at a common mesh editing concept - subdividing the mesh. Using subdivide to connect edges and create randomness.
+
+Chapter 06 - Mesh Tools - Working With Loops
+How to remove edges without destroying the connecting faces, filling holes, general loop selection and a look at adding loops and edge loop sliding.
+
+Chapter 07 - Mesh Tools - Vertex Connect
+How to connect vertices together while maintaining correct geometry. Also looks at a common modeling error and how to clean it up. 
+
+Chapter 08 - Mesh Tools - Inset
+A brief look over the inset options another very useful and frequently reached for mesh editing tool. 
+
+Chapter 09 - Mesh Tools - Merging
+How to combine vertices and remove unrequired geometry.
+
+Chapter 10 - Mesh Tools - Knife Tool
+A brief look at the most common ways to use the knife tool. 
+
+
+Section 4 - MODELING A GAME ASSET
+
+Chapter 01 - Ref Images & Traffic Cone Blockout
+How to setup background images to use as reference. Also includes the basic blockout for the traffic cone.
+
+Chapter 02 - Traffic Cone Modeling
+Using the mesh editing tools in a practical example to complete the traffic cone asset.
+
+Chapter 03 - Normal Editing - Smooth/Hard Edges
+A look over how to control the smoothing in edges and faces.
+
+Chapter 04 - High Res Traffic Cone
+A look at how to use modifiers to non-destructively build up a high resolution version of the cone model.
+
+Chapter 05 - Camera Modeling
+Another opportunity to explore Blender's modeling tools to create a camera model.
+
+Chapter 06 - Modeling With Curves
+Using a curve to create a cable to connect the camera to the base of the cone. 
+
+Chapter 07 - Finishing The Camera Model
+More modeling techniques and tools to quickly finish up the camera model.
+
+Chapter 08 - Removing NGons
+How to use the select tools to easily find NGons and how to resolve them.
+
+Chapter 09 - Hi Res Lens And Ribbed Cable
+Creating the high resolution Camera Lens object and ribbed cabling ready for baking later on. Includes another look at non-destructive modeling with modifiers. 
+
+Chapter 10 - Organizing And Naming Objects
+Moving objects between layers and giving descriptive names to the layers with the Layer Management addon. Also several ways to rename your objects. 
+
+Section 5 - UV’S
+
+Chapter 01 - UV’s Overview
+A look over several potential UV creating workflows in Blender.
+
+Chapter 02 - Mirror Modifier
+Preparing the models for use with the mirror modifier. 
+
+Chapter 03 - UV Unwrapping The Base
+A practical example of uv unwrapping by starting with the traffic cone base. 
+
+Chapter 04 - UV Unwrapping The Cable
+More uv techniques explored while unwrapping the cable.
+
+Chapter 05 - UV Unwrapping The Cone
+Further practical examples of how to unwrap objects in Blender.
+
+Chapter 06 - UV Final Layout
+How to create the final UV layout for all the separate objects intended to use the same image texture.
+
+
+Section 6 - BAKING
+
+Chapter 01 - Baking Setup And Creating Images
+How to create images in Blender and how to then use them in solid shading mode. Then how to get setup and ready to start baking to those images. 
+
+Chapter 02 - Baking Ambient Occlusion
+How to bake low resolution objects and avoiding errors. How to bake from high resolution objects and how to change the quality of the occlusion bake. 
+
+Chapter 03 - Baking Normal Maps
+How to bake normal maps and correctly view the results. 
+
+Chapter 04 - Creating The Base Color Materials
+How to assign and work with multiple materials on a single object.
+
+Chapter 05 - Baking The Base Color
+Baking all the assigned materials into one base texture.
+
+Chapter 06 - Setting Up A Complete Material
+Layering up all the baked textures into one material.
+
+Chapter 07 - Cord Baking And Multiple UV Sets
+More high resolution baking and dealing with multiple uv sets. 
+
+Chapter 08 - Baking The Camera Lens
+Finishing up by baking out the necessary maps for the camera lens.
+
+
+Section 7 - 3D PAINTING
+
+Chapter 01 - 3D Painting Setup
+How to get started really easily with 3D painting in Blender. Then a more detailed look at setting up ready to 3D paint on the traffic cone game asset.
+
+Chapter 02 - Painting A Vertical Gradient
+Taking a look at the fill brush, gradients and issues with painting in the orthographic view.
+
+Chapter 03 - Multi Layered Painting
+Setting up and painting in a multi-layered setting. Creating your own brush tip shapes and how to erase without affecting underlying layers both in 2D and 3D.
+
+Chapter 04 - Worn Edges With Cavity Masking
+Using the cavity masking option to isolate exposed edges and paint a worn chipped feel over those areas.
+
+Chapter 05 - Baking All Layers Down To 1
+Creating the final baked images aligning everything into 1 uv map, 1 diffuse texture and 1 normal map.
+
+
+Section 8 - IMPORTING AND EXPORTING
+
+Chapter 01 - Importing A TF2 Character
+A look at a Team Fortress 2 specific addon to help import one of the characters that can be used for finalizing the asset.
+
+Chapter 02 - Rigging And Placing The Asset
+Placing the 'hat' traffic cone asset onto the character and parenting to the rig. 
+
+Chapter 03 - LOD Creation
+The last modeling task - clean mesh reduction to create an even lower resolution version of the game asset.
+
+Chapter 04 - Exporting As OBJ
+A quick and simple process of exporting the game asset and the lower resolution LOD asset out as OBJ files.
+
+Chapter 05 - Importing Into Team Fortress 2
+Finishing up by getting the game asset into the Team Fortress 2 game engine. 
